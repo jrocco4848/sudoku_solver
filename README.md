@@ -1,5 +1,5 @@
 TO RUN: 
-  Open "sudoku.html" with any browser. Ensure both files (sudoku.html, code.js) are in same file directory.
+  Unzip and open "sudoku.html" with any browser.
 
 TO DO: 
   Check that user's inputted puzzle is possible to solve
