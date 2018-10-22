@@ -5,17 +5,9 @@ var yOffset = 10;
 var w = 30;
 var current = 0;
 
+var grid = Array(81).fill(0);
 
-var grid = [ 0, 0, 0, 0, 0, 0, 0, 0, 0,
-             0, 0, 0, 0, 0, 0, 0, 0, 0,
-             0, 0, 0, 0, 0, 0, 0, 0, 0,
-             0, 0, 0, 0, 0, 0, 0, 0, 0,
-             0, 0, 0, 0, 0, 0, 0, 0, 0,
-             0, 0, 0, 0, 0, 0, 0, 0, 0,
-             0, 0, 0, 0, 0, 0, 0, 0, 0,
-             0, 0, 0, 0, 0, 0, 0, 0, 0,
-             0, 0, 0, 0, 0, 0, 0, 0, 0 ];
-
+//print puzzle in console
 function printGrid() {
   var output = "";
   for(var i = 0; i < grid.length; i++) {
@@ -25,7 +17,13 @@ function printGrid() {
    console.log(output);
 }
 
+function clearGrid() {
+  grid = Array(81).fill(0);
+  draw();
+}
+
 function isValid(value, index) {
+  
   //check if value exists in index's row
   var rowBegin = Math.floor(index / 9)*9;
   for(var i = rowBegin; i < rowBegin + 9; i++) {
@@ -108,7 +106,8 @@ function draw() {
   //draw values
   for(var i = 0; i < 81; i++) {
     var s = "box" + i;
-    if(grid[i] !== 0) document.getElementById(s).innerHTML=grid[i];
+    if(grid[i] !== 0) document.getElementById(s).innerHTML = grid[i];
+    else document.getElementById(s).innerHTML = "";
   }
   
 }
