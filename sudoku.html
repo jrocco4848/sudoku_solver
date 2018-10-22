@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+  <canvas id="canvas" width="400" height="400" style="position:absolute; left:0px; top:0px"></canvas>
+  
+  <button onclick="solveGrid()" style="position:absolute; top:290px">Solve</button>
+  
+  <div id="box0" style="position:absolute; left:20px; top:15px"></div>
+  <div id="box1" style="position:absolute; left:50px; top:15px"></div>
+  <div id="box2" style="position:absolute; left:80px; top:15px"></div>
+  <div id="box3" style="position:absolute; left:110px; top:15px"></div>
+  <div id="box4" style="position:absolute; left:140px; top:15px"></div>
+  <div id="box5" style="position:absolute; left:170px; top:15px"></div>
+  <div id="box6" style="position:absolute; left:200px; top:15px"></div>
+  <div id="box7" style="position:absolute; left:230px; top:15px"></div>
+  <div id="box8" style="position:absolute; left:260px; top:15px"></div>
+  
+  <div id="box9" style="position:absolute; left:20px; top:45px"></div>
+  <div id="box10" style="position:absolute; left:50px; top:45px"></div>
+  <div id="box11" style="position:absolute; left:80px; top:45px"></div>
+  <div id="box12" style="position:absolute; left:110px; top:45px"></div>
+  <div id="box13" style="position:absolute; left:140px; top:45px"></div>
+  <div id="box14" style="position:absolute; left:170px; top:45px"></div>
+  <div id="box15" style="position:absolute; left:200px; top:45px"></div>
+  <div id="box16" style="position:absolute; left:230px; top:45px"></div>
+  <div id="box17" style="position:absolute; left:260px; top:45px"></div>
+  
+  <div id="box18" style="position:absolute; left:20px; top:75px"></div>
+  <div id="box19" style="position:absolute; left:50px; top:75px"></div>
+  <div id="box20" style="position:absolute; left:80px; top:75px"></div>
+  <div id="box21" style="position:absolute; left:110px; top:75px"></div>
+  <div id="box22" style="position:absolute; left:140px; top:75px"></div>
+  <div id="box23" style="position:absolute; left:170px; top:75px"></div>
+  <div id="box24" style="position:absolute; left:200px; top:75px"></div>
+  <div id="box25" style="position:absolute; left:230px; top:75px"></div>
+  <div id="box26" style="position:absolute; left:260px; top:75px"></div>
+  
+  <div id="box27" style="position:absolute; left:20px; top:105px"></div>
+  <div id="box28" style="position:absolute; left:50px; top:105px"></div>
+  <div id="box29" style="position:absolute; left:80px; top:105px"></div>
+  <div id="box30" style="position:absolute; left:110px; top:105px"></div>
+  <div id="box31" style="position:absolute; left:140px; top:105px"></div>
+  <div id="box32" style="position:absolute; left:170px; top:105px"></div>
+  <div id="box33" style="position:absolute; left:200px; top:105px"></div>
+  <div id="box34" style="position:absolute; left:230px; top:105px"></div>
+  <div id="box35" style="position:absolute; left:260px; top:105px"></div>
+  
+  <div id="box36" style="position:absolute; left:20px; top:135px"></div>
+  <div id="box37" style="position:absolute; left:50px; top:135px"></div>
+  <div id="box38" style="position:absolute; left:80px; top:135px"></div>
+  <div id="box39" style="position:absolute; left:110px; top:135px"></div>
+  <div id="box40" style="position:absolute; left:140px; top:135px"></div>
+  <div id="box41" style="position:absolute; left:170px; top:135px"></div>
+  <div id="box42" style="position:absolute; left:200px; top:135px"></div>
+  <div id="box43" style="position:absolute; left:230px; top:135px"></div>
+  <div id="box44" style="position:absolute; left:260px; top:135px"></div>
+  
+  <div id="box45" style="position:absolute; left:20px; top:165px"></div>
+  <div id="box46" style="position:absolute; left:50px; top:165px"></div>
+  <div id="box47" style="position:absolute; left:80px; top:165px"></div>
+  <div id="box48" style="position:absolute; left:110px; top:165px"></div>
+  <div id="box49" style="position:absolute; left:140px; top:165px"></div>
+  <div id="box50" style="position:absolute; left:170px; top:165px"></div>
+  <div id="box51" style="position:absolute; left:200px; top:165px"></div>
+  <div id="box52" style="position:absolute; left:230px; top:165px"></div>
+  <div id="box53" style="position:absolute; left:260px; top:165px"></div>
+  
+  <div id="box54" style="position:absolute; left:20px; top:195px"></div>
+  <div id="box55" style="position:absolute; left:50px; top:195px"></div>
+  <div id="box56" style="position:absolute; left:80px; top:195px"></div>
+  <div id="box57" style="position:absolute; left:110px; top:195px"></div>
+  <div id="box58" style="position:absolute; left:140px; top:195px"></div>
+  <div id="box59" style="position:absolute; left:170px; top:195px"></div>
+  <div id="box60" style="position:absolute; left:200px; top:195px"></div>
+  <div id="box61" style="position:absolute; left:230px; top:195px"></div>
+  <div id="box62" style="position:absolute; left:260px; top:195px"></div>
+  
+  <div id="box63" style="position:absolute; left:20px; top:225px"></div>
+  <div id="box64" style="position:absolute; left:50px; top:225px"></div>
+  <div id="box65" style="position:absolute; left:80px; top:225px"></div>
+  <div id="box66" style="position:absolute; left:110px; top:225px"></div>
+  <div id="box67" style="position:absolute; left:140px; top:225px"></div>
+  <div id="box68" style="position:absolute; left:170px; top:225px"></div>
+  <div id="box69" style="position:absolute; left:200px; top:225px"></div>
+  <div id="box70" style="position:absolute; left:230px; top:225px"></div>
+  <div id="box71" style="position:absolute; left:260px; top:225px"></div>
+  
+  <div id="box72" style="position:absolute; left:20px; top:255px"></div>
+  <div id="box73" style="position:absolute; left:50px; top:255px"></div>
+  <div id="box74" style="position:absolute; left:80px; top:255px"></div>
+  <div id="box75" style="position:absolute; left:110px; top:255px"></div>
+  <div id="box76" style="position:absolute; left:140px; top:255px"></div>
+  <div id="box77" style="position:absolute; left:170px; top:255px"></div>
+  <div id="box78" style="position:absolute; left:200px; top:255px"></div>
+  <div id="box79" style="position:absolute; left:230px; top:255px"></div>
+  <div id="box80" style="position:absolute; left:260px; top:255px"></div>
+
+  <script src="code.js"></script>
+  
+</body>
+</html>
