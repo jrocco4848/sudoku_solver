@@ -1,0 +1,8 @@
+TO RUN: 
+  Open "sudoku.html" with any browser. Ensure both files (sudoku.html, code.js) are in same file directory.
+
+TO DO: 
+  Check that user's inputted puzzle is possible to solve
+  Clear puzzle button
+  Delete current square and previous (backspace)
+  
