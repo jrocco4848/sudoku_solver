@@ -3,6 +3,5 @@ TO RUN:
 
 TO DO: 
   Check that user's inputted puzzle is possible to solve
-  Delete current square and previous (backspace)
   Scale grid size with window size
   
