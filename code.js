@@ -83,10 +83,10 @@ function draw() {
   //highlight current
   ctx.beginPath();
   ctx.rect(xOffset + ((current % 9) * w), yOffset + (Math.floor(current/9) * w), w, w);
-  ctx.fillStyle = 'blue';
+  ctx.fillStyle = '#80BFFF';
   ctx.fill();
   
-  ctx.lineWidth = 1;
+  ctx.lineWidth = 2;
   ctx.strokeStyle = 'black';
   
   //draw columns
@@ -170,8 +170,12 @@ document.onkeydown = function(e) {
             grid[current] = 9;
             if(current < 80) current++;
             break;
-        case 127:
+        case 8:
             grid[current] = 0;
+            if(current > 0) current--;
+            break;
+        case 127:
+            alert(1);
             break;
     }
     draw();
